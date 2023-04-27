@@ -12,6 +12,12 @@ conn.on("data", (data) => {
   console.log("Server Message:", data);
 });
 
+// write message back to server on connection
+conn.on("connect", () => {
+  conn.write("Name: SNK")
+  // conn.write("A new player has joined!");
+});
+
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
