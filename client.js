@@ -15,6 +15,14 @@ conn.on("data", (data) => {
 // write message back to server on connection
 conn.on("connect", () => {
   conn.write("Name: SNK")
+
+  // move up function and action on connect
+  // const moveUp = function () {
+  //   conn.write("Move: up")
+  // }
+  // setInterval(moveUp, 100)
+ 
+
   // conn.write("A new player has joined!");
 });
 
