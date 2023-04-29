@@ -5,6 +5,7 @@ let connection;
 const handleUserInput = function () {
   const stdin = process.stdin;
     stdin.on('data', (key) => {
+      
       // if key === ctrl + c then exit game
       if (key === '\u0003') {
         console.log('exiting game')
@@ -12,32 +13,20 @@ const handleUserInput = function () {
       }
 
       // wasd movements
-      if (key === 'w') {
-        const moveUp = function () {
-          connection.write("Move: up")
-        }
-        setInterval(moveUp, 200)
+      if (key === 'w') {  
+          connection.write("Move: up")  
       }
             
       if (key === 'a') {
-        const moveLeft = function () {
           connection.write("Move: left")
-        }
-        setInterval(moveLeft, 200)
       }
             
       if (key === 's') {
-        const moveDown = function () {
           connection.write("Move: down")
-        }
-        setInterval(moveDown, 200)
       }
             
       if (key === 'd') {
-        const moveRight = function () {
           connection.write("Move: right")
-        }
-        setInterval(moveRight, 200)
       }
     })
 
