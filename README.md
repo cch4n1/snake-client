@@ -15,6 +15,7 @@ The Snake Server is required before you can run this client. You will need to be
 
 ## Getting Started
 
+- Download and install the [Snek Server Repo](https://github.com/lighthouse-labs/snek-multiplayer). 
 - Follow steps inside the snek server repo to run the server side
 - Run the development snake client using the `node play.js` command.
 
