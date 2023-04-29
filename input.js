@@ -46,27 +46,27 @@ const handleUserInput = function() {
 
     // chat commands
     if (key === '1') {
-      connection.write("Say: Hello!");
+      connection.write("Say: Hello!               ");
     }
 
     if (key === '2') {
-      connection.write("Say: I'm winning!");
+      connection.write("Say: I'm winning!         ");
     }
 
     if (key === '3') {
-      connection.write("Say: I'm losing!");
+      connection.write("Say: I'm losing!          ");
     }
 
     if (key === '4') {
-      connection.write("Say: I don't believe you!");
+      connection.write("Say: I don't believe you! ");
     }
 
     if (key === '5') {
-      connection.write("Say: Good Game!");
+      connection.write("Say: Good Game!           ");
     }
 
     if (key === '6') {
-      connection.write("Say: Goodbye!");
+      connection.write("Say: Goodbye!             ");
     }
   });
 
