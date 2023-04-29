@@ -43,6 +43,31 @@ const handleUserInput = function () {
           connection.write("Move: right")
         }, 100);
       }
+
+      // chat commands
+      if (key === '1') {
+          connection.write("Say: Hello!")
+      }
+
+      if (key === '2') {
+        connection.write("Say: I'm winning!")
+      }
+
+      if (key === '3') {
+        connection.write("Say: I'm losing!")
+      }
+
+      if (key === '4') {
+        connection.write("Say: I don't believe you!")
+      }
+
+      if (key === '5') {
+        connection.write("Say: Good Game!")
+      }
+
+      if (key === '6') {
+        connection.write("Say: Goodbye!")
+      }
     })
 
 
